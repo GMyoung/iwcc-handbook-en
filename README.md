@@ -1,24 +1,12 @@
-# Work Comp · Field Guide
+# Illinois Work Comp Handbook · English Reading Edition
 
-An interactive English learning edition of the Illinois Workers’ Compensation Commission’s 2013 *Handbook on Workers’ Compensation and Occupational Diseases*. All 94 questions across 11 sections have a lesson, original PDF page reference, and link to the 2024 official revision. The site shows one question at a time and stores progress in the local browser.
+Built around the IWCC [2024 revised handbook](https://iwcc.illinois.gov/content/dam/soi/en/web/iwcc/documents/handbook/IWCC%20handbook%2006.06.24.pdf), with the 2013 supplied handbook’s outline retained for 11 distinct chapter pages and 94 lesson pages. Two filing questions unique to the 2013 outline have been updated for electronic filing.
 
-## Learning features
+Each lesson places the handbook’s corresponding answer directly in the reading flow, followed by a specific teaching scenario, an interactive illustration, and a compact source line. Chapter 9 includes the full statutory body-part schedule. Real court cases identify the worker, dispute, and outcome and link to the Illinois court opinion. Fictional teaching scenarios are labeled.
 
-- Search, sequential reading, completion tracking, and text-size control.
-- A three-step micro demonstration for each question; chapter labs cover notice, CompFile, provider choice, TTD/TPD calculations, four PPD paths, and the full scheduled body-part lookup.
-- Three named court cases with facts and outcomes: Bryon Kawa, Jeff Urban, and Craig Kolin. Each links to the official Illinois court opinion.
-- Responsive mobile layout and reduced-motion support.
+The chapter navigation opens distinct routes; lessons use `#/lesson/<number>`. Search, sequential reading, text-size control, saved progress, a mobile chapter drawer, and reduced-motion support are included.
 
-## Sources and date
-
-- The user-supplied PDF has the same SHA-256 hash as the [official IWCC 2013 PDF](https://iwcc.illinois.gov/content/dam/soi/en/web/iwcc/about/handbook/documents/handbook.pdf).
-- The [IWCC handbook page](https://iwcc.illinois.gov/about/handbook.html) listed the June 6, 2024 revision when checked on September 28, 2026. Each lesson links to the matching PDF page.
-- The 2013 paper-filing instructions have been replaced by CompFile. Historical links, amounts, and procedures should not be acted on without checking current materials.
-- Case summaries derive from Illinois court opinions. Ordinary interactive examples are educational illustrations, not actual adjudications.
-
-This is a learning aid. Actual claims depend on current law, injury date, and facts. Calculators demonstrate formulas without statutory minimums or maximums.
-
-## Run and publish
+## Run locally
 
 ```bash
 npm ci
@@ -26,4 +14,6 @@ npm run dev
 npm run build
 ```
 
-Pushing to `main` builds and deploys via `.github/workflows/pages.yml`. No API key or backend is needed. GPT API spend is $0. The independent Chinese repository is [iwcc-handbook-zh](https://github.com/GMyoung/iwcc-handbook-zh).
+Push `main` to publish through GitHub Actions and GitHub Pages. No API key, backend, or paid image service is required; GPT API spend is $0. The Chinese edition lives in a [separate repository](https://github.com/GMyoung/iwcc-handbook-zh).
+
+This is educational material. Individual outcomes depend on facts and current law. Calculator illustrations omit statutory minimums and maximums. The [IWCC handbook page](https://iwcc.illinois.gov/about/handbook.html) was checked on September 28, 2026.
